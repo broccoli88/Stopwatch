@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Stopwatch</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <script defer src="js/script.js"></script>
-  </head>
-  <body></body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Stopwatch</title>
+		<link rel="stylesheet" href="/css/normalize.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script defer src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="stopwatch">
+			<div class="digits">
+				<span class="number" id="digit4">0</span>
+				<span class="number" id="digit3">0</span>
+				<span id="colon">:</span>
+				<span class="number" id="digit2">0</span>
+				<span class="number" id="digit1">0</span>
+			</div>
+			<div id="buttons">
+				<button id="start">START</button>
+				<button id="stop">STOP</button>
+				<button id="reset">RESET</button>
+			</div>
+		</div>
+	</body>
 </html>

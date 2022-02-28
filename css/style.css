@@ -1,21 +1,84 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  font-size: 1.5rem;
-  line-height: 1.5;
+	color: white;
 
-  max-width: 100vw;
-  min-height: 100vh;
+	font-size: 2rem;
+	line-height: 1;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(../Images/endless-constellation.svg);
+
+	display: grid;
+	place-content: center;
 }
 
-/* ##################################TYPOGRAPHY################################# */
+#stopwatch {
+	padding: 3rem;
+
+	border: 5px solid hsl(0, 0%, 100%, 0.6);
+	border-radius: 20px;
+	box-shadow: 0 0 10px hsl(0, 0%, 100%);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.digits {
+	width: 100%;
+
+	font-size: 25rem;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.number {
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#colon {
+	padding-bottom: 6rem;
+}
+
+#buttons {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
+}
+
+#buttons > button {
+	width: 20rem;
+
+	padding: 1em 3em;
+
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 2px solid white;
+	background-color: transparent;
+
+	cursor: pointer;
+}
